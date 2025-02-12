@@ -18,9 +18,9 @@
     <link rel="icon" href="./assets/img/favicon.svg" />
 
     <!--  Link para a Folha de Estilos CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-    <title>Portfólio da Aline</title>
+    <title>Portfólio CodeCanvas</title>
 </head>
 
 <body>
@@ -42,8 +42,9 @@
                     <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
-                        <li><a href="#contact">Contato</a></li>
                         <li><a href="#project">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -71,34 +72,57 @@
 
             <!-- Imagem da Seção Home -->
             <article id="home_imagem" class="flex home_content">
-                <img src="./assets/img/Innovation-pana.svg" alt="Capacete de Astronauta Animado">
+                <img src="./assets/img/Innovation-pana.svg" alt="Mulher sentada com um noteboock ao lado de um robô">
             </article>
 
         </section>
 
         <!-- Seção sobre -->
         <section id="about" class="flex sobre_container">
+        </section>
 
-            <!-- Imagem da Seção Sobre -->
-            <img src="./assets/img/Imagem do WhatsApp de 2024-11-14 à(s) 17.34.05_bbbf8539.jpg" alt="Foto do Perfil do Github">
+        <section class=>
+           <article id="project" class="flex project_container">
+            <h3>Meus projetos</h3>
+           </article>
+            
 
-            <!-- Texto da Seção Sobre -->
-            <article id="about_texto">
-                <h2>Sobre mim</h2>
-                <p>Olá! Sou Aline Anacleto uma desenvolvedora apaixonada por tecnologia, atualmente especializado em JavaScript, TypeScript e Desenvolvimento Web Fullstack e estudante de Análise e desenvolvimento de sistemas. Estou em constante evolução e busco criar soluções inovadoras e funcionais que tragam resultados reais.
-                    Minha jornada começou no mundo do Desenvolvimento Front-End , onde mergulhei em frameworks como React e Vue.js , e evoluí para a criação de sistemas completos usando Node.js e NestJS no back-end. Tenho uma base forte em SQL e banco de dados , o que me permite entender o ciclo completo de desenvolvimento e entregar projetos robustos e bem estruturados.
-                </p>
+            <div class="row">
+                <article class="card">
+                    <img src="./assets/img/1737747859706.jpg" alt="">
+                    <div class="card_content">
+                        <h4 class="card_title">FytSync</h4>
+                        <p>O projeto consiste em um Aplicativo de Fitness Personalizado , desenvolvido em TypeScript e utilizando o NestJS como framework back-end.
+                            O principal objetivo é fornecer um sistema de fitness que permita aos usuários se cadastrarem e acessarem uma variedade de exercícios organizados por categorias. O sistema oferece a possibilidade de encontrar e visualizar exercícios de acordo com as preferências e objetivos do usuário, oferecendo uma experiência personalizada e eficiente.</p>
 
-                <!-- Detalhes do Github -->
-                <div id="about_github" class="flex sobre_github">
-                    <a href="https://github.com/alineanacletoo" target="_blank" class="botao">
-                        Github
-                    </a>
-                    <p>200 Seguidores</p>
-                    <p>20 Repositórios</p>
-                </div>
+                            <a href="https://github.com/projeto-integrador-g5-generation/FitSync" class="botao">Ver Repositório</a>
+                    </div>
+                </article>
 
-            </article>
+
+                <article class="card">
+                    <img src="./assets/img/1738703142679.jpg" alt="">
+                    <div class="card_content">
+                        <h4 class="card_title">GoGoTogether</h4>
+                        <p>O GoGoTogether é um sistema de caronas colaborativas desenvolvido em TypeScript utilizando NestJS como framework back-end. O objetivo é conectar motoristas e passageiros de forma segura e eficiente, permitindo que os usuários experimentem e encontrem caronas de maneira simples e organizada.</p>
+
+                        <a href="https://github.com/projeto-integrador-g5-generation/GoGoTogether" class="botao">Ver Repositório</a>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <img src="./assets/img/Captura de tela 2025-02-11 131514.png" alt="">
+                    <div class="card_content">
+                        <h4 class="card_title">Página Aprenser</h4>
+                        <p>Aprenser foi mais do que um simples exercício técnico; foi um aprendizado prático que me mostrou o quanto é gratificante transformar conceitos em algo tangível. Estou muito animada para continuar aprendendo e aplicando essas habilidades em projetos futuros!</p>
+
+                        <a href="https://github.com/alineanacletoo/pagina.aprenser" class="botao">Ver Repositório</a>
+                    </div>
+                </article>
+
+            </div>
+
         </section>
 
         <!-- Seção de Contato -->
@@ -123,7 +147,10 @@
             </article>
 
             <!-- Formulário de Contato -->
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/2b8778d5da5be4841835dab61b471d01" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite o seu nome">
@@ -151,6 +178,9 @@
     <footer>
         Feito com 🧡 por Aline Anacleto - 2025
     </footer>
+
+    <!--Script JavaScript-->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
